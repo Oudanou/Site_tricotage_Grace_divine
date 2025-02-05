@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 253, 253);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  padding: 20px;
+  position: sticky;
+  left: 0;
+  top: 0;
+
+}
+
+.identity {
+  font-size: 30px;
+  color: white;
+}
+
+.nav {
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navtoggler {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: none;
+
+}
+
+
+
+.banner {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 45vh;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner p {
+  font-style: italic;
+  width: 50%;
+  line-height: 25px;
+  font-size: large;
+}
+
+.info p {
+  line-height: 25px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: blue;
+  /* text-wrap: no-wrap; */
+  width: max-content;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.num {
+  display: flex;
+  width: max-content;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.about {
+  padding: 40px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 35px;
+  margin: 10px auto;
+}
+
+.info h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.info p {
+  font-size: 20px;
+}
+
+.about>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 25px;
+  padding: 15px;
+}
+
+.about>div img {
+  width: 100%;
+
+}
+
+.boutique {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 10px;
+}
+
+/*#logo{
+    border: 15px;
+    border-style: solid;
+    border-radius: 30px;
+    width: 20%;
+ }*/
+
+.header {
+  height: 75px;
+  width: 100%;
+  color: rgb(251, 250, 252);
+  background-color: rgb(42, 7, 244);
+  text-decoration: none;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  /* background-size: cover; */
+  /*important*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-align: right;
+  font-size: larger;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100px;
+}
+
+
+ul a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.vitrine {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 5px 5px 10px #00000032;
+  border-radius: 10px;
+}
+
+.vitrine h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.vitrine img {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  align-items: center;
+  margin-left: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+.form input,
+.form textarea{
+  padding: 10px;
+  border-radius: 10px;
+border: 1px solid gray;
+flex-grow: 1;
+}
+
+.input-group{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  width: min(100%, 500px);
+}
+
+.form .btn{
+  color: white;
+  width: min(100%, 500px);
+  border: none;
+  padding: 10px;
+}
+
+.input-group textarea{
+  height: 150px;
+}
+
+.divmere {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.footer {
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+}
+
+@media (max-width: 678px
+  /*taille max des ecrans des tablettes*/
+) {
+  .banner {
+    height: auto;
+margin-top: 25px;
+  }
+
+  #navtoggler {
+    display: flex;
+  }
+
+  .banner p {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .boutique {
+    grid-template-columns: repeat(2, 1fr
+        /*fr pour dire aue les n elements aurons la meme longueur*/
+      );
+  }
+
+  .about>div {
+    grid-template-columns: 1fr;
+
+  }
+
+  .info {
+    order: 2;
+  }
+
+  .about>div>img {
+    order: 1;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: blue;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .nav>li>a {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .boutique {
+    grid-template-columns: 1fr;
+  }
+}
